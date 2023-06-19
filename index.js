@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
       loop: true,
       grabCursor: true,
       spaceBetween: 20,
+      
       pagination: {
          el: ".swiper-pagination",
          clickable: true,

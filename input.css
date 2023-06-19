@@ -212,6 +212,7 @@ body {
 
 .swiper-pagination-bullet {
     outline: 1px solid #F25F3A;
+    border-radius: 10%;
     background-color: white;
     opacity: 1;
   }
