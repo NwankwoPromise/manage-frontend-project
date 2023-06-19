@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url('../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: 150% -60%;
+}
+
+.about-us {
+    background-image: url('../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: -80% -60%;
+}
+
+.circle{
+    animation: ripple 4s infinite;
+}
+
+.small-top-circle{
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    top: -100px;
+    opacity: 0.7;
+}
+.medium-top-circle{
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    top: -200px;
+    opacity: 0.5;
+}
+.large-top-circle{
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    top: -300px;
+    opacity: 0.4;
+}
+
+.small-bottom-circle{
+    width: 200px;
+    height: 200px;
+    right: -100px;
+    bottom: -100px;
+    opacity: 0.7;
+}
+.medium-bottom-circle{
+    width: 400px;
+    height: 400px;
+    right: -200px;
+    bottom: -200px;
+    opacity: 0.5;
+}
+.large-bottom-circle{
+    width: 600px;
+    height: 600px;
+    right: -300px;
+    bottom: -300px;
+    opacity: 0.4;
+}
+
+.icon-slide-up {
+    animation: slide-left 2s forwards;
+}
+
+#icon-text-slide-right-animation {
+    animation: slide-right 2s ease-out;
+    animation-delay: 0.8s;
+}
+
+.hidden-text {
+    visibility: hidden;
+}
+
+#dots {
+    animation: spin .8s linear 4;
+}
+
+.arrow{
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move-down 3s ease-out infinite;
+}
+.arrow:first-child{
+    animation: move-down 3s ease-out 1s infinite;
+    /* outline: 2px solid red; */
+}
+.arrow:nth-child(2){
+    animation: move-down 3s ease-out 2s infinite;
+    /* outline: 2px solid blue; */
+}
+.arrow:before, .arrow:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background-color: salmon;
+}
+.arrow:before{
+    left: 0;
+    transform: skew(0deg, 30deg);
+}
+.arrow:after{
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+}
+.scroll-down{
+    animation: fade-in 1s ease-in-out;
+    animation-delay: 3.5s;
+    visibility: hidden;
+}
+
+
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes move-down{
+    25%{
+        opacity: 1;
+    }
+    33%{
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    67%{
+        opacity: 1;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(55px)
+        scale3d(0.5, 0.5, 0.5);
+    }
+}
+
+@keyframes ripple{
+    0%, 100%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+}
+
+
+@keyframes slide-out {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(20%);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(600%);
+    }
+    to {
+        transform: translateY(0);
+        scale: 1.25;
+    }
+}
+
+.swiper-pagination-bullet {
+    outline: 1px solid #F25F3A;
+    background-color: white;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #F25F3A;
+  }
+
+
+@media (max-width: 576px) {
+    body {
+        background-size: 500px;
+        background-position: 50px -50px ;
+    }
+    .about-us {
+      background: none;
+    }
+}

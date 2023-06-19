@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <title>Manage Landing Page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <div class="loader page flex w-screen min-h-screen remove-container overflow-hidden fixed">
+        <div id="loader-wrapper" class=" bg-black w-screen h-screen  top-0 left-0 ">
+            <div  id="loader-icon" class="flex items-center justify-end h-screen outline">
+               <div class="absolute outline outline-white h-screen w-screen overflow-hidden flex items-center bg-fixed">
+                    <div class="small-top-circle circle absolute rounded-full bg-brightRed bg-fixed"></div>
+                    <div class="medium-top-circle circle absolute rounded-full bg-brightRed bg-fixed"></div>
+                    <div class="large-top-circle circle absolute rounded-full bg-brightRed bg-fixed"></div>
+                    <div class="small-bottom-circle circle absolute rounded-full bg-brightRed bg-fixed"></div>
+                    <div class="medium-bottom-circle circle absolute rounded-full bg-brightRed bg-fixed"></div>
+                    <div class="large-bottom-circle circle absolute rounded-full bg-brightRed bg-fixed"></div>
+               </div>
+                <div id="icon-container" class="relative left-full w-full icon-slide-up flex items-center justify-center space-x-3 scale-125">
+                    <div id="dots" class=" grid grid-cols-2 gap-3 min-w-fit min-h-fit">
+                        <div class="dot-1 bg-brightRed w-2 h-2 rounded-full"></div>
+                        <div class="dot-2 bg-brightRed w-2 h-2 rounded-full"></div>
+                        <div class="dot-3 bg-brightRed w-2 h-2 rounded-full"></div>
+                        <div class="dot-4 bg-brightRedLight w-2 h-2 rounded-full"></div>
+                    </div>
+    
+                    <div class="icon-text hidden-text relative text-6xl font-semibold text-white right-2 py-3 bottom-2 overflow-x-hidden">
+                        <p  id="icon-text-slide-right-animation">manage</p>
+                    </div>
+                </div>
+              
+            </div>
+           <div class="scroll-down relative -top-56 w-screen h-1/4 flex flex-col items-center justify-evenly">
+                <div class=" w-6 h-6 relative -top-2">
+                    <div class="arrow absolute w-7 h-2 opacity-0"></div>
+                    <div class="arrow absolute w-7 h-2 opacity-0"></div>
+                    <div class="arrow absolute w-7 h-2 opacity-0"></div>
+                </div>
+                <span class="text-white animate-pulse opacity-25 text-xs"><a href="#main-page">SCROLL DOWN</a></span>
+           </div>
+        </div>
+    </div>
+
+    <body class="text-lg md:text-base w-screen h-screen overflow-x-hidden ">
+        
+        <div id="main-page" class=" w-screen absolute translate-y-1/2 bg-white">    
+            <nav class="relative container p-6 mx-auto h-1/5">
+                <div class="p-2 flex items-center justify-between">
+                    <div class="pt-2 hover:scale-110 transition">
+                        <img src="/images/logo.svg" alt="Manage company logo">
+                    </div>
+                
+                    <ul class=" hidden text-darkBlue md:flex">
+                        <li class="px-2">
+                            <a href="#" class="hover:text-darkGrayishBlue"> Pricing</a>
+                        </li>
+                        <li class="px-2">
+                            <a href="#" class="hover:text-darkGrayishBlue"> Product</a>
+                        </li>
+                        <li class="px-2">
+                            <a href="#" class="hover:text-darkGrayishBlue"> About Us</a>
+                        </li>
+                        <li class="px-2">
+                            <a href="#" class="hover:text-darkGrayishBlue"> Careers</a>
+                        </li>
+                        <li class="px-2">
+                            <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+                        </li>
+                    </ul>
+                    <button class="hidden text-base shadow-lg shadow-brightRedLight bg-brightRed rounded-full px-10 py-3 text-white transition hover:scale-110 hover:shadow-none hover:bg-brightRedLight md:block">Get Started</button>
+                </div>
+            </nav>
+
+            <section id="hero-section" class="mx-auto container space-y-9 mb-20 mt-8 md:flex md:flex-row-reverse">
+                <div id="hero-image" class="md:w-1/2">
+                    <img src="/images/illustration-intro.svg" alt="Chart illustrations">
+                </div>
+                <div id="hero-text" class="text-center flex flex-col items-center md:w-1/2 md:flex md:items-start md:justify-center md:text-left ">
+                    <div class="text-4xl mb-3 font-bold text-darkBlue">
+                        <h1>Bring everyone together to build better products.</h1>
+                    </div>
+                    <div class="text-darkGrayishBlue mb-6 px-10">
+                        <p><span class="text-darkBlue font-semibold">Manage</span> makes it simple for software teams to plan day -to- day tasks while keeping the larger team goals in view.</p>
+                    </div>
+                    <button class="text-base shadow-lg shadow-brightRedLight bg-brightRed rounded-full px-10 py-3 text-white flex transition hover:scale-110 hover:shadow-none hover:bg-brightRedLight">Get Started</button>
+                </div>
+            </section>
+    
+            <div class="about-us">
+                <section id="about-us" class="mx-auto mt-3 container md:flex md:justify-between">
+                    <div id="about-us-text" class="px-10 mb-20 md:text-left md:px-0 md:w-2/5">
+                        <div class="text-3xl mb-3 font-bold text-darkBlue">
+                            <h2>What's different about <span class="font-extrabold">Manage</span>?</h2>
+                        </div>
+                        <div class="text-darkGrayishBlue">
+                            <p><span class="text-darkBlue">Manage</span> provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+                        </div>
+                    </div>
+        
+                    <div id="about-us-list" class="md:w-1/2 md:flex flex-col md:items-center">
+                        <div class= "py-5">
+                            <div id="list-title" class="container flex items-center ml-2 rounded-s-full bg-veryPaleRed mb-3 md:bg-transparent">
+                                <span class="bg-brightRed rounded-full px-7 py-2 text-white">01</span>
+                                <p class="text-center font-bold text-darkBlue py-2 ml-2">Track company-wide progress</p>
+                            </div>
+                            <div class="list-text  text-darkGrayishBlue text-left px-8 md:px-24">
+                                <p>See how your day-to-day tasks fit into the vision. Go from tracking progress at the milestone level all the way down to the smallest of details. Never lose sight of the bigger picture again.</p>
+                            </div>
+                        </div>
+                        
+                        <div class= "py-5">
+                            <div id="list-title" class="flex items-center ml-2 rounded-s-full bg-veryPaleRed mb-3 md:bg-transparent">
+                                <span class="bg-brightRed rounded-full px-7 py-2 text-white">02</span>
+                                <p class="text-center font-bold text-darkBlue py-2 ml-2">Advanced built-in reports</p>
+                            </div>
+                            <div class="list-text  text-darkGrayishBlue text-left px-8 md:px-24">
+                                <p>Set internal delivery estimates and track progress toward company goals Our customisable dashboard helps you build out the reports you need to keep key stake holders informed.</p>
+                            </div>
+                        </div>
+                        
+                        <div class= "py-5">
+                            <div id="list-title" class="container flex items-center ml-2 rounded-s-full bg-veryPaleRed mb-3 md:bg-transparent">
+                                <span class="bg-brightRed rounded-full px-7 py-2 text-white">03</span>
+                                <p class="font-bold text-darkBlue ml-2">Everything you need in one place</p>
+                            </div>
+                            <div class="list-text  text-darkGrayishBlue text-left px-8 md:px-24">
+                                <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. <span class="text-darkBlue font-semibold">Manage</span> offers an all-in-one team productivity solution.</p>
+                            </div>
+                        </div>        
+                    </div>
+                </section>
+            </div>
+            <section class="testimonial-section w-screen h-4/5 flex flex-col items-center justify-center mt-10">
+                <div class="testimonial-text text-darkBlue text-3xl font-bold text-center container mx-auto">
+                    <h1>What they've said</h1>
+                </div>
+
+               <div class="swiper testimonial-container bg-tablet flex flex-col items-center w-screen h-1/2 relative">
+                   <div class="content slider-carousel w-11/12 h-72 flex mt-24">
+                        <div class="swiper-wrapper slider-wrapper w-full h-full flex justify-between ">
+                            <div class="swiper-slide testimonial one bg-veryLightGray w-24 h-64 flex flex-col items-center justify-center relative rounded-md bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-10 border border-gray-100">
+                                <img src="/images/avatar-anisha.png" alt="" class="w-20 h-20 relative bottom-12">
+                               <div class="flex flex-col items-center justify-center relative bottom-5">
+                                 <h6 class="font-bold text-darkBlue text-2xl pb-4">Anisha Li</h6>
+                                 <p class="text-darkGrayishBlue text-center px-5">"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."</p>
+                               </div>
+                            </div>
+                            <div class="swiper-slide testimonial two bg-veryLightGray w-96 h-64 flex flex-col items-center justify-center relative rounded-md bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-10 border border-gray-100">
+                                <img src="/images/avatar-ali.png" alt="" class="w-20 relative bottom-10">
+                                <div class="flex flex-col items-center justify-center relative bottom-5">
+                                    <h6 class="font-bold text-darkBlue text-2xl pb-4">Ali Bravo</h6>
+                                    <p class="text-darkGrayishBlue text-center px-5">"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial three bg-veryLightGray w-96 h-64 flex flex-col items-center justify-center relative rounded-md bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-10 border border-gray-100">
+                                <img src="/images/avatar-richard.png" alt="" class="w-20 relative bottom-12">
+                                <div class="flex flex-col items-center justify-center relative bottom-5">
+                                    <h6 class="font-bold text-darkBlue text-2xl pb-4">Richard Watts</h6>
+                                    <p class="text-darkGrayishBlue text-center px-5">"Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone I talk to!"</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimonial four bg-veryLightGray w-96 h-64 flex flex-col items-center justify-center relative rounded-md bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-10 border border-gray-100">
+                                <img src="/images/avatar-shanai.png" alt="" class="w-20 relative bottom-12">
+                                <div class="flex flex-col items-center justify-center relative bottom-5">
+                                    <h6 class="font-bold text-darkBlue text-2xl pb-4">Shanai Gough</h6>
+                                <p class="text-darkGrayishBlue text-center px-5">"Software allows us to track, manage and collaborate projects from anywhere. It keeps the whole team in-sync without being intrusive."</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-pagination mb-20"></div>
+                   </div>
+                   
+                    <!-- <div class="indicators space-x-1 ">
+                        <button class="bg-brightRed rounded-full outline outline-2 outline-brightRed p-1"></button>
+                        <button class="rounded-full outline outline-2 outline-brightRed p-1"></button>
+                        <button class="rounded-full outline outline-2 outline-brightRed p-1"></button>
+                        <button class="rounded-full outline outline-2 outline-brightRed p-1"></button>
+                    </div> -->
+                    
+                    <button class="mt-10 text-base shadow-lg shadow-brightRedLight bg-brightRed rounded-full px-10 py-3 text-white transition hover:scale-110 hover:shadow-none hover:bg-brightRedLight">Get Started</button>
+               </div>
+            </section>   
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="/index.js" defer></script>
+    </body>
+</html>
